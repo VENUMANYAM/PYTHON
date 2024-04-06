@@ -1,0 +1,6 @@
+def sum_of_natural_numbers_formula(n):
+    return n * (n + 1) // 2
+
+n = 100
+result = sum_of_natural_numbers_formula(n)
+print(f"The sum of natural numbers : {result}")
