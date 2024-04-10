@@ -1,0 +1,14 @@
+def group_anagrams(strs):
+    anagrams = {}
+    for string in strs:
+        sorted_string = ''.join(sorted(string))
+        if sorted_string in anagrams:
+            anagrams[sorted_string].append(string)
+        else:
+            anagrams[sorted_string] = [string]
+    return list(anagrams.values())
+
+# Example usage:
+strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+print(group_anagrams(strs))
+
