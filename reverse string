@@ -1,0 +1,8 @@
+def reverse_string(s):
+    reversed_s = ""
+    for c in s:
+        reversed_s = c + reversed_s
+    return reversed_s
+s = "SELL123"
+print(reverse_string(s))
+
